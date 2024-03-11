@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react'
 import { AuthService } from '../services/auth.service'
 import { toast } from 'react-toastify'
 import { useAppDispatch } from '../store/hooks'
-import { setTokenToLocalStorage } from '../helpers/localstorag.helper'
+import { setTokenToLocalStorage } from '../helpers/localstorage.helper'
 import { login } from '../store/user/userSlice'
 import { useNavigate } from 'react-router-dom'
 

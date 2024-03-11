@@ -4,7 +4,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { useAppDispatch } from '../store/hooks'
 import { logout } from '../store/user/userSlice'
-import { removeTokenFromLocalStorage } from '../helpers/localstorag.helper'
+import { removeTokenFromLocalStorage } from '../helpers/localstorage.helper'
 import { toast } from 'react-toastify'
 
 const Header: FC = () => {

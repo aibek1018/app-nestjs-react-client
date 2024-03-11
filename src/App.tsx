@@ -1,7 +1,7 @@
 import { RouterProvider } from 'react-router-dom'
 import { router } from './router/router'
 import { useAppDispatch } from './store/hooks'
-import { getTokenFromLocalStorage } from './helpers/localstorag.helper'
+import { getTokenFromLocalStorage } from './helpers/localstorage.helper'
 import { toast } from 'react-toastify'
 import { AuthService } from './services/auth.service'
 import { login, logout } from './store/user/userSlice'
@@ -33,7 +33,7 @@ function App() {
 	useEffect(() => {
 		checkAuth()
 	}, [])
-	
+
 	return <RouterProvider router={router} />
 }
 
